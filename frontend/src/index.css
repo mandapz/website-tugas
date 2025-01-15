@@ -1,0 +1,168 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #168ca9, #f9f9f9, #629aee);
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memastikan isi card berada di tengah */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #374151;
+}
+
+form input {
+  width: 90%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background: #f9fafb;
+}
+
+form input:focus {
+  border-color: #168ca9;
+}
+
+button {
+  background: #8b5cf6;
+  color: rgb(66, 66, 66);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #168ca9;
+  color:#ffffff
+}
+
+.edit-button {
+  background-color: #10b981;  /* Green */
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  width: 50%;
+  margin-bottom: 3px;
+}
+
+.edit-button:hover {
+  background-color: #16a34a;
+}
+
+.delete-button {
+  background-color: #ef4444;  /* Red */
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  width: 50%;
+  margin-top: 3px;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  text-align: center;
+  padding: 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+td {
+  color: #4b5563;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.actions .edit {
+  background: #10b981;
+  color: white;
+}
+
+.actions .delete {
+  background: #ef4444;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f3f4f6;
+  }
+}
